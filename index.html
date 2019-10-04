@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Online Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap" rel="stylesheet">
+
+
+    </style>
+  </head>
+  <body>
+  <header>
+      <h1>The Code Review</h1>
+  </header>
+
+  <main class="container">
+    <div class="signup">
+      <h2>Signup for our Newsletter</h2>
+      <p>Get the latest news on how your coded is doing right in your inbox.</p>
+    </div>
+
+    <hr class="top-divide">
+    <hr class="bottom-divide">
+
+    <form class="contact-form">
+    <fieldset class="contact">
+      <legend class="fieldset-legend">Contact Information</legend>
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" name="First Name" id="first-name" placeholder="Required" required>
+      </div>
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" name="Email Address" id="email" placeholder="Required" required>
+      </div>
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="Phone Number" id="phone" placeholder="Your Phone Number">
+      </div>
+      <div>
+        <label for="address">Street Address:</label>
+        <input type="text" name="Address" id="address" placeholder="Your Address">
+      </div>
+      <div>
+        <label for="city">City:</label>
+        <input type="text" name="City" id="city" placeholder="Your City">
+      </div>
+      <div class="state">
+        <label for="state">State:</label>
+        <select id="state">
+        <option value="" disabled selected>Choose your state</option>
+        <option value="AL">Alabama</option>
+      	<option value="AK">Alaska</option>
+      	<option value="AZ">Arizona</option>
+      	<option value="AR">Arkansas</option>
+      	<option value="CA">California</option>
+      	<option value="CO">Colorado</option>
+      	<option value="CT">Connecticut</option>
+      	<option value="DE">Delaware</option>
+      	<option value="DC">District Of Columbia</option>
+      	<option value="FL">Florida</option>
+      	<option value="GA">Georgia</option>
+      	<option value="HI">Hawaii</option>
+      	<option value="ID">Idaho</option>
+      	<option value="IL">Illinois</option>
+      	<option value="IN">Indiana</option>
+      	<option value="IA">Iowa</option>
+      	<option value="KS">Kansas</option>
+      	<option value="KY">Kentucky</option>
+      	<option value="LA">Louisiana</option>
+      	<option value="ME">Maine</option>
+      	<option value="MD">Maryland</option>
+      	<option value="MA">Massachusetts</option>
+      	<option value="MI">Michigan</option>
+      	<option value="MN">Minnesota</option>
+      	<option value="MS">Mississippi</option>
+      	<option value="MO">Missouri</option>
+      	<option value="MT">Montana</option>
+      	<option value="NE">Nebraska</option>
+      	<option value="NV">Nevada</option>
+      	<option value="NH">New Hampshire</option>
+      	<option value="NJ">New Jersey</option>
+      	<option value="NM">New Mexico</option>
+      	<option value="NY">New York</option>
+      	<option value="NC">North Carolina</option>
+      	<option value="ND">North Dakota</option>
+      	<option value="OH">Ohio</option>
+      	<option value="OK">Oklahoma</option>
+      	<option value="OR">Oregon</option>
+      	<option value="PA">Pennsylvania</option>
+      	<option value="RI">Rhode Island</option>
+      	<option value="SC">South Carolina</option>
+      	<option value="SD">South Dakota</option>
+      	<option value="TN">Tennessee</option>
+      	<option value="TX">Texas</option>
+      	<option value="UT">Utah</option>
+      	<option value="VT">Vermont</option>
+      	<option value="VA">Virginia</option>
+      	<option value="WA">Washington</option>
+      	<option value="WV">West Virginia</option>
+      	<option value="WI">Wisconsin</option>
+      	<option value="WY">Wyoming</option>
+      </select>
+      </div>
+      <div class="zip">
+        <label for="zip">Zip Code:</label>
+        <input type="text" name="Zip Code" id="zip" placeholder="Your Zip Code">
+      </div>
+    </fieldset>
+
+      <hr class="form-divide">
+
+      <fieldset class="newsletter">
+      <legend class="fieldset-legend">Newsletter</legend>
+      <p>Select the newsletters you'd like to receive</p>
+      <div>
+        <input type="checkbox" name="newsletter" value="HTML" id="html" checked>
+        <label for="html">HTML News</label>
+        <br>
+        <input type="checkbox" name="newsletter" value="CSS" id="css">
+        <label for="css">CSS News</label>
+        <br>
+        <input type="checkbox" name="newsletter" value="java" id="java">
+        <label for="java">Javascript News</label>
+      </div>
+      <div>
+        <p>Newsletter Information</p>
+        <input type="radio" name="format" value="HTML" id="html-radio" checked>
+        <label for="html-radio">HTML</label>
+        <br>
+        <input type="radio" name="format" value="plain" id="plain">
+        <label for="plain">Plain Text</label>
+      </div>
+      <div>
+        <label for="topics">Other topics you'd like to hear about</label>
+        <textarea name="topics" rows="6" id="topics"></textarea>
+      </div>
+    </fieldset>
+
+    <button type="submit" name="submit">Sign Up</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Copyright The Code Review</p>
+  </footer>
+
+
+
+  </body>
+</html>
