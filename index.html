@@ -4,7 +4,8 @@
     <meta charset="utf-8">
     <title>Online Registration Form</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700&display=swap" rel="stylesheet">
 
 
@@ -16,40 +17,42 @@
   </header>
 
   <main class="container">
-    <div>
+    <div class="signup">
       <h2>Signup for our Newsletter</h2>
       <p>Get the latest news on how your coded is doing right in your inbox.</p>
     </div>
 
-    <hr>
+    <hr class="top-divide">
+    <hr class="bottom-divide">
 
     <form class="contact-form">
-    <fieldset>
+    <fieldset class="contact">
       <legend class="fieldset-legend">Contact Information</legend>
       <div>
         <label for="first-name">First Name:</label>
-        <input type="text" name="First Name" id="first-name" placeholder="Required">
+        <input type="text" name="First Name" id="first-name" placeholder="Required" required>
       </div>
       <div>
         <label for="email">Email Address:</label>
-        <input type="email" name="Email Address" id="email" placeholder="Required">
+        <input type="email" name="Email Address" id="email" placeholder="Required" required>
       </div>
       <div>
         <label for="phone">Phone Number:</label>
-        <input type="tel" name="Phone Number" id="phone">
+        <input type="tel" name="Phone Number" id="phone" placeholder="Your Phone Number">
       </div>
       <div>
         <label for="address">Street Address:</label>
-        <input type="text" name="Address" id="address">
+        <input type="text" name="Address" id="address" placeholder="Your Address">
       </div>
       <div>
         <label for="city">City:</label>
-        <input type="text" name="City" id="city">
+        <input type="text" name="City" id="city" placeholder="Your City">
       </div>
-      <div>
+      <div class="state">
         <label for="state">State:</label>
         <select id="state">
-      	<option value="AL">Alabama</option>
+        <option value="" disabled selected>Choose your state</option>
+        <option value="AL">Alabama</option>
       	<option value="AK">Alaska</option>
       	<option value="AZ">Arizona</option>
       	<option value="AR">Arkansas</option>
@@ -102,15 +105,15 @@
       	<option value="WY">Wyoming</option>
       </select>
       </div>
-      <div>
+      <div class="zip">
         <label for="zip">Zip Code:</label>
-        <input type="text" name="Zip Code" id="zip">
+        <input type="text" name="Zip Code" id="zip" placeholder="Your Zip Code">
       </div>
     </fieldset>
 
-      <hr>
+      <hr class="form-divide">
 
-      <fieldset>
+      <fieldset class="newsletter">
       <legend class="fieldset-legend">Newsletter</legend>
       <p>Select the newsletters you'd like to receive</p>
       <div>
@@ -133,11 +136,11 @@
       </div>
       <div>
         <label for="topics">Other topics you'd like to hear about</label>
-        <textarea name="topics" rows="4" cols="80" id="topics"></textarea>
+        <textarea name="topics" rows="6" id="topics"></textarea>
       </div>
     </fieldset>
 
-    <button type="submit" name="submit">Submit</button>
+    <button type="submit" name="submit">Sign Up</button>
     </form>
   </main>
 
