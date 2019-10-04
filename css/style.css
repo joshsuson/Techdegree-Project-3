@@ -183,6 +183,7 @@ textarea {
     font-size: 1em;
     font-family: "Merriweather", serif;
     border-radius: 5px;
+    border: none;
   }
 
   footer {
