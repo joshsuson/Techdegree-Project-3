@@ -196,13 +196,16 @@ textarea {
   }
 
  input:focus {
-    border: solid 5px ##6bb8b4;
+    border: solid 5px #6bb8b4;
     background-color: white;
   }
 
-/*==================
+
+/***==================
 Desktop Styles
-==================*/
+==================****/
+
+
 
 @media (min-width: 768px) {
 
